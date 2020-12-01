@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav{
+    height : 80px;
+    background-color : black;
+}
+
+nav ul{
+    float : right;
+    margin-right : 25px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin : 0 15px;
+}
+
+nav ul li a{
+    color : white;
+    position : relative;
+    font-size : 18px;
+    padding : 5px 0;
+    text-transform: uppercase;
+}
+
+nav ul li a:before{
+    position : absolute;
+    content: '';
+    left : 0px;
+    bottom : 0px;
+    height : 3px;
+    width : 100%;
+    background-color: white;
+    transform : scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+nav ul li a:hover:before{
+    transform : scaleX(1);
+    transform-origin: left;
+}
+
+#note{
+    overflow-y: scroll;
+    height : 16cm;
+    width : 23cm;
+    position: absolute;
+    left :30%;
+    top : 13%;
+    background-color: blue;
+    padding : 10px;
+}
+
+#edit{
+    background-color: green;
+    height : 16cm;
+    width : 9cm;
+    position : absolute;
+    top : 13%;
+    left : 1%;
+    padding-left : 20px;
+    padding-top : 10px;
+    padding-right:10px;
+
+}
+
+#day{
+    padding : 5px;
+
+}
+
+#notes{
+    padding : 5px;
+}
+
+td{
+    text-align: center;
+    width : 2cm;
+    padding-top:50px;
+    padding-bottom: 15px;
+}
+
+tr {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-collapse: collapse;
+}​
